@@ -9,10 +9,7 @@ Shippable CI image for Java on Ubuntu 14.04. Available jdk versions:
 4. oraclejdk8
 
 ## How to use
-You can use this image to run java builds on Shippable. Just update your
-`shippable.yml` file and add the `build_image` directive. You should also
-activate the appropriate virtual envrionment so your build runs against the
-correct version of jdk. You can use `$SHIPPABLE_JDK_VERSION` environment
+You can use this image to run java builds on Shippable. Update your shippable.yml file with build_image tag and activate jdk in before_script section to run your build against the correct version. You can use `$SHIPPABLE_JDK_VERSION` environment
 variable to specify jdk versions. Here's a sample YML file to get you going:
 
 ````
