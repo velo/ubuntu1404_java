@@ -1,4 +1,4 @@
-FROM shippableimages/ubuntu1404_base:0.0.1
+FROM shippableimages/ubuntu1404_base:latest
 
 RUN echo "debconf shared/accepted-oracle-license-v1-1 select true" | debconf-set-selections;
 RUN echo "debconf shared/accepted-oracle-license-v1-1 seen true" | debconf-set-selections;
